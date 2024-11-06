@@ -221,6 +221,11 @@ class SDistSettings:
     If set to True, CMake will be run before building the SDist.
     """
 
+    dereference: bool = False
+    """
+    If set to True, will dereference any symlink added to the sdist.
+    """
+
 
 @dataclasses.dataclass
 class WheelSettings:
