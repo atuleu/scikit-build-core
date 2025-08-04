@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling", "hatch-vcs"]
+requires = ["hatchling", "hatch-vcs", "setuptools-scm<9"]
 build-backend = "hatchling.build"
 
 [project]
@@ -68,7 +68,7 @@ test-hatchling = [
 ]
 test-meta = [
     "hatch-fancy-pypi-readme>=22.3",
-    "setuptools-scm",
+    "setuptools-scm < 9",
 ]
 test-numpy = [
     "numpy; python_version<'3.14' and platform_python_implementation!='PyPy' and (platform_system != 'Windows' or platform_machine != 'ARM64')",
